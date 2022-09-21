@@ -1,0 +1,24 @@
+a {
+    color: #de2341;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #880017;
+}
+
+.footer {
+    text-align: center !important;
+    margin: auto !important;
+
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i {
+    color: white !important;
+    margin: 10px;
+    cursor: pointer;
+}

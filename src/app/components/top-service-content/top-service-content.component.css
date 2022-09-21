@@ -1,0 +1,26 @@
+.imageContainer img {
+    max-width: 350px;
+}
+
+.textwrapper .title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.textwrapper p {
+    font-size: 15px;
+}
+
+.btnWrapper .startProjectBTN {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+}
+
+.btnWrapper .startProjectBTN:hover {
+    background: #de2341;
+    color: #ffffff;
+}

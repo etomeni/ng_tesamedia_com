@@ -1,0 +1,29 @@
+<main id="backgroundVideo">
+    <section class="video-container">
+        <!-- <video src="./../../../assets/videos/bodyVideo.mp4" autoplay loop playsinline muted></video> -->
+        <video [src]="videoLinks.bodyVideo" autoplay loop playsinline muted></video>
+        
+        <div class="fullwidth-overlay" style="background-color: #de234288;"></div>
+    
+        <div class="callout">
+            <div class="container my-5">
+
+                <div class="row align-items-end my-5 py-5">
+                    <div class="col textContainer">
+                        <h2 class="text-center">
+                            <strong class="title">
+                                Take your business to the next level
+                            </strong>
+                            <br>
+                            Contact us for a quote, proposal or consultation
+
+                            <div style="text-transform: uppercase !important;" class="mt-4">
+                                <button type="button" routerLink="/contact" class="btn btn-danger contactUs">Contact Us</button>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

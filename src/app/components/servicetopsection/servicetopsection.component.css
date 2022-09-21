@@ -1,0 +1,38 @@
+#serviceList {
+    background-color: black;
+    color: white;
+}
+
+#serviceList .headerTitle {
+    color: #de2341;
+    font-weight: bolder;
+}
+
+#serviceList .card * {
+    background: unset;
+}
+
+#serviceList .card {
+    background: rgb(51, 51, 51) !important;
+    border-radius: 20px;
+    border: none;
+    height: 27rem;
+}
+
+#serviceList .card .card-body {
+    cursor: pointer;
+}
+
+#serviceList .card .card-img-top {
+    max-width: 180px;
+}
+
+#serviceList .divier {
+    height: 2px;
+    background: #de2341 !important;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

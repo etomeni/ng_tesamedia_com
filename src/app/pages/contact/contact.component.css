@@ -1,0 +1,30 @@
+#contactUs .interested .form-check-input:checked {
+    background-color: #de2341;
+    border-color: #de2341;
+}
+
+#contactUs .interested .form-check-input:active,
+#contactUs .interested .form-check-input:focus {
+    border-color: #de2341;
+}
+
+#contactUs .writeupContainer h1 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#contactUs .logoDetailsContainer .infoSection i {
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+#contactUs .logoDetailsContainer .socialIcons i {
+    padding: 5px 8px;
+    margin: auto 5px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 5px;
+}

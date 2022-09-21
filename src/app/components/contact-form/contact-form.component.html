@@ -1,0 +1,307 @@
+<main id="contactForm">
+    <form #contactUs="ngForm" (ngSubmit)="onSubmitContactUs(contactUs)">
+        <div class="row">
+            <!-- Name(s) --> 
+            <div class="col-12 mb-2">
+                <label for="full-name-input" class="small form-label">Name(s) <span class="text-danger">*</span> </label>
+
+                <div class="input-group">
+                    <span class="input-group-text" id="full-name">
+                        <i class="bi bi-person-badge"></i>
+                    </span>
+                    <input type="text" 
+                        class="form-control" 
+                        placeholder="Please enter your name(s)" 
+                        id="full-name-input" 
+                        autocomplete="name"
+                        required
+                        minlength="4"
+                        pattern="[a-zA-Z0-9 ]+$"
+                        name="name"
+                        #name="ngModel"
+                        ngModel
+                        aria-label="Name" aria-describedby="full-name-Help full-name"
+                    >
+                </div>
+    
+                <div id="full-name-Help" class="form-text form-error" *ngIf="name.touched && name.invalid">
+                    <ul class="mb-0">
+                        <li *ngIf="name.hasError('pattern')">
+                            Special characters and numberic not allowed 
+                        </li>
+                        <li *ngIf="name.hasError('required')">
+                            Your name(s) are required 
+                        </li>
+                        <li *ngIf="name.hasError('minlength')">
+                            Characters should be more than 4 alphabets 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Email Address -->
+            <div class="col-md-6 mb-2">
+                <label for="email-input" class="small form-label">Email address <span class="text-danger">*</span> </label>
+
+                <div class="input-group">
+                    <span class="input-group-text" id="email">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" 
+                        placeholder="Enter a valid email address" id="email-input" 
+                        autocomplete="email"
+                        required
+                        pattern="[a-zA-Z0-9\.\-\_]+@[a-zA-Z0-9\.\-\_]+\.[a-zA-Z]+$"
+                        email
+                        name="email"
+                        #email="ngModel"
+                        ngModel
+                        aria-label="Email" aria-describedby="email-Help email"
+                    >
+                </div>
+    
+                <div id="email-Help" class="form-text form-error" 
+                    *ngIf="email.touched && email.invalid"
+                >
+                    <ul class="mb-0">
+                        <li *ngIf="email.hasError('pattern')">
+                            Please enter a vaild email address
+                        </li>
+                        <li *ngIf="email.hasError('required')">
+                            Email address is required 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="col-md-6 mb-2">
+                <label for="Phone-Number-input" class="small form-label">Phone number <span class="text-danger">*</span></label>
+
+                <div class="input-group">
+                    <span class="input-group-text" id="email">
+                        <i class="bi bi-telephone"></i>
+                    </span>
+                    <input type="tel" class="form-control" 
+                        placeholder="Enter a valid phone number" id="Phone-Number-input" 
+                        autocomplete="tel"
+                        required
+                        minlength="5"
+                        maxlength="15"
+                        pattern="^[\+0-9]+$"
+                        name="phoneNumber"
+                        #phoneNumber="ngModel"
+                        ngModel
+                        aria-label="Phone-Number" aria-describedby="Phone-Number-Help Phone-Number"
+                    >
+                </div>
+    
+                <div id="Phone-Number-Help" class="form-text form-error" *ngIf="phoneNumber.touched && phoneNumber.invalid">
+                    <ul class="mb-0">
+                        <li *ngIf="phoneNumber.hasError('pattern')">
+                            Please enter a vaild phone number
+                        </li>
+                        <li *ngIf="phoneNumber.hasError('required')">
+                            Phone number is required 
+                        </li>
+                        <li *ngIf="phoneNumber.hasError('minlength')">
+                            Phone number should be more than 10 digits
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- subject -->
+            <!-- <div class="col-12 mb-3">
+                <div class="form-group">
+                    <label class="small mb-1" for="inputSubject">Subject <span class="text-danger">*</span></label>
+                    <input class="form-control" id="inputSubject" 
+                        type="text"
+                        placeholder="Please enter message subject"
+                        autocomplete="subject"
+                        required
+                        name="subject"
+                        #subject="ngModel"
+                        ngModel
+                        aria-label="subject" aria-describedby="inputSubject-Help inputSubject"
+                    >
+
+                </div>
+
+                <div id="inputSubject-Help" class="form-text form-error" *ngIf="subject.touched && subject.invalid">
+                    <ul class="mb-0">
+                        <li *ngIf="subject.hasError('required')">
+                            Please Enter the message Subject 
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+
+            <!-- message -->
+            <div class="col-12 mb-3">
+                <div class="form-group">
+                    <label class="small mb-1" for="messageInput">Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="messageInput"
+                        placeholder="Please enter your message here..."
+                        rows="5"
+                        data-minwords="5"
+                        required
+                        name="message"
+                        #message="ngModel"
+                        ngModel
+                        aria-label="message" aria-describedby="messageInput-Help messageInput"
+                    ></textarea>
+                </div>
+
+                <div id="messageInput-Help" class="form-text form-error" *ngIf="message.touched && message.invalid">
+                    <ul class="mb-0">
+                        <li *ngIf="message.hasError('required')">
+                            You can't send an empty message 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Interested in -->
+            <div class="col-12 mb-3 interested">
+                <p>Interested in:</p>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="socialMediaInput" 
+                        value="Social Media"
+                        name="social_Media"
+                        #social_Media="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="socialMediaInput">Social Media</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="digitalMarketingInput" 
+                        value="Digital Marketing"
+                        name="digital_Marketing"
+                        #digital_Marketing="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="digitalMarketingInput">Digital Marketing</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="graphicDesignInput" 
+                        value="Graphic Design"
+                        name="graphic_Design"
+                        #graphic_Design="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="graphicDesignInput">Graphic Design</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="copywritingInput" 
+                        value="Copywriting"
+                        name="copywriting"
+                        #copywriting="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="copywritingInput">Copywriting</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="websitesInput" 
+                        value="Websites"
+                        name="websites"
+                        #websites="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="websitesInput">Websites</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="brandingInput" 
+                        value="Branding"
+                        name="branding"
+                        #branding="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="brandingInput">Branding</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="photographyInput" 
+                        value="Photography"
+                        name="photography"
+                        #photography="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="photographyInput">Photography</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="videographyInput" 
+                        value="Videography"
+                        name="videography"
+                        #videography="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="videographyInput">Videography</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="appDevelopmentInput" 
+                        value="App Development"
+                        name="app_Development"
+                        #app_Development="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="appDevelopmentInput">App Development</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                        type="checkbox" 
+                        id="otherInput" 
+                        value="Other"
+                        name="other"
+                        #other="ngModel"
+                        ngModel
+                    >
+                    <label class="form-check-label" for="otherInput">Other</label>
+                </div>
+            </div>
+
+            <div class="row" *ngIf="formStatus.error || formStatus.success">
+                <div class="col-12">
+                    <div class="alert" [ngClass]="{'alert-success': formStatus.success, 'alert-danger' : formStatus.error}" role="alert">
+                        {{ formStatus.message }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group float-right mt-3 mb-0">
+                <button class="btn btn-danger text-uppercase" type="submit"
+                     [disabled]="contactUs.invalid || formStatus.submitted"
+                >
+                    Send <i *ngIf="formStatus.submitted" class="BTNloader"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</main>

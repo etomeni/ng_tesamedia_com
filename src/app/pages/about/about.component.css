@@ -1,0 +1,303 @@
+#explodeYourBusiness {
+    background-color: black;
+}
+
+#explodeYourBusiness .fullwidth-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  /* -webkit-transform-style: preserve-3d; */
+}
+
+/*** T H E - M A G I C - O F - O B J E C T - F I T ***/
+/*****************************************************/
+
+#explodeYourBusiness .video-container {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media(min-width: 600px) {
+    #explodeYourBusiness .video-container {
+        height: 100vh;
+    }
+}
+
+#explodeYourBusiness video {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+  
+  
+/*** A E S T H E T I C S ***/
+/***************************/
+  
+#explodeYourBusiness * {
+  box-sizing: border-box;
+}
+  
+  
+#explodeYourBusiness .video-container:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(black, .2);
+  z-index: 1;
+}
+  
+#explodeYourBusiness h1 {
+    /* text-transform: capitalize; */
+    font-weight: 900;
+    margin: 0 0 1rem;
+    padding: 0;
+    line-height: 1;
+    font-family: Futura, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+
+@media (max-width: 400px) {
+    #explodeYourBusiness h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #explodeYourBusiness h1 {
+        font-size: 75px;
+    }
+}
+
+#explodeYourBusiness .callout {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  height: 100%;
+  text-align: start;
+  position: relative;
+  z-index: 10;
+  color: #ffffff;
+}
+  
+#explodeYourBusiness .callout .titleHeader {
+    line-height: 1.16;
+    --fontSize:54;
+}
+  
+#explodeYourBusiness .callout .titleHeader .highlight1 {
+    background:linear-gradient(to top, #de2341 40%, transparent 40%);
+    color:#ffffff;
+}
+  
+
+/* #explodeYourBusiness button.meetTheTeamBTN:hover {
+  background-color: transparent;
+  color: white;
+  border-color: #ffffff;
+
+} */
+
+#explodeYourBusiness video.scale2 {
+    -moz-transform:scale(1.3);
+    -webkit-transform:scale(1.3);
+    -o-transform:scale(1.3);
+    -ms-transform:scale(1.3);
+    transform:scale(1.3);
+}
+
+
+
+/* Marketing Made Easy */
+/* section#marketingMadeEasy {
+
+} */
+
+section#marketingMadeEasy .title {
+    color: #de2341;
+}
+
+section#marketingMadeEasy .titleHeader {
+    --fontsize: 32;
+    line-height: 1.3;
+}
+
+section#marketingMadeEasy .titleHeader strong .highlight1 {
+    background:linear-gradient(to top, #de2341 40%, transparent 40%);
+    color:#000000;
+}
+
+section#marketingMadeEasy .imageContainer {
+    background-color: #afafaf;
+    border-radius: 5px;
+}
+
+section#marketingMadeEasy .imageContainer img {
+    border-radius: 5px;
+}
+
+
+
+/* See what we offer/have done/can do */
+section#seeWhatWe p.divider {
+    height: 2px;
+    width: 10vw;
+    background-color: #000000;
+}
+
+section#seeWhatWe .offer {
+    background-color: #afafaf;
+}
+
+section#seeWhatWe .offer {
+    background-image: url("./../../../assets/images/team1.jpg");
+    background-image: linear-gradient(139deg, #de2341 40%,#de2342ab 100%),url("./../../../assets/images/team1.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section#seeWhatWe .offer button.ourServicesBTN {
+    border-radius: 0;
+    font-weight: bolder;
+    text-transform: capitalize;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+section#seeWhatWe .haveDone {
+    background-image: url("./../../../assets/images/team2.jpg");
+    background-image: linear-gradient(139deg, #ffffff 40%,rgba(255,255,255,0.5) 100%),url("./../../../assets/images/team2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section#seeWhatWe .haveDone button.ourWorkBTN {
+    border-radius: 0;
+    font-weight: bolder;
+    text-transform: capitalize;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+section#seeWhatWe .canDoIt {
+    background-image: url("./../../../assets/images/wisdom.JPG");
+    background-image: linear-gradient(141deg, #000000 36%,rgba(0,0,0,0.5) 100%),url("./../../../assets/images/wisdom.JPG");
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section#seeWhatWe .canDoIt button.getQuoteBTN {
+    border-radius: 0;
+    font-weight: bolder;
+    text-transform: capitalize;
+    background-color: #de2341;
+    color: #000000;
+}
+
+section#seeWhatWe .canDoIt button.getQuoteBTN:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* meet Our Team */
+section#meetOurTeam {
+    background-color: #e2e2e2;
+}
+
+section#meetOurTeam .titleHeader .highlight1 {
+    background:linear-gradient(to top, #de2341 40%, transparent 40%);
+    color:#000000;
+}
+
+/* How we’ll work together */
+section#workTogether {
+    background-color: black;
+}
+
+section#workTogether .row .colomb {
+    border-top: 3px dotted #de2341;
+}
+
+section#workTogether .row .colomb p {
+    color: #ffffff;
+}
+
+section#workTogether .row .titleHeader strong {
+    color: #de2341;
+    font-size: 54px;
+}
+
+section#workTogether {
+    background-color: black;
+}
+
+section#workTogether .titleHeader .highlight1 {
+    background:linear-gradient(to top, #de2341 40%, transparent 40%);
+    color:#ffffff;
+}
+
+/* social Stalk Us */
+section#socialStalkUs {
+    background-color: #de2341;
+    color: #ffffff;
+    text-align: center;
+}
+
+section#socialStalkUs h1 {
+    font-weight: bolder;
+}
+
+section#socialStalkUs p.iconList i {
+    margin: 10px 10px;
+    font-size: x-large;
+}
+
+/* Like what you see? */
+section#likeWhatYouSee {
+    background-color: black;
+}
+
+section#likeWhatYouSee .titleHeader .highlight1 {
+    background:linear-gradient(to top, #de2341 40%, transparent 40%);
+    color:#ffffff;
+}
+
+section#likeWhatYouSee form label {
+    color: #ffffff;
+}
+
+section#likeWhatYouSee form button.btnSend {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+section#likeWhatYouSee form button.btnSend:hover {
+    color: #000000 !important;
+    background-color: #dc3545 !important;
+}

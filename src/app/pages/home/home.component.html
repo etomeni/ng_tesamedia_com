@@ -1,0 +1,306 @@
+<main>
+    <section id="top">
+        <section class="video-container">
+            <!-- <video src="./../../../assets/videos/headerVideo.mp4" autoplay loop playsinline muted></video> -->
+            <video [src]="videoLinks.headerVideo" autoplay loop playsinline muted></video>
+            
+            <div class="fullwidth-overlay" style="background-color:rgba(0, 0, 0, 0.603);"></div>
+
+            <div class="callout">
+                <div class="container-fluid my-5 py-5">
+
+                    <div class="row align-items-end my-5 py-5">
+                        <div class="col-sm-8 col-md-9" style="align-content: flex-start; text-align: start;">
+                            <h1>
+                                <span style="font-weight: normal;">
+                                    <span style="color: #ffffff;">
+                                        We’re really good at 
+                                        <br>
+                                        <b style="color: #de2341;">growing</b> your 
+                                        <b style="color: #de2341;">company.</b>
+                                    </span>
+                                </span>
+                            </h1>
+            
+                            <div class="my-4">
+                                <p style="color: #ffffff;">We’ve built our own businesses. Now we’re helping you build yours.</p>
+                            </div>
+    
+                            <div style="text-transform: uppercase !important;">
+                                <button type="button" routerLink="/quote" class="btn btn-danger me-2">Get a quote</button>
+                                <button type="button" routerLink="/services" class="btn btn-outline-danger outlineBTN">View our services</button>
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-4 col-md-3">
+                            <div class="icons">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-instagram"></i>
+                                <!-- <i class="bi bi-youtube"></i> -->
+                                <i class="bi bi-linkedin"></i>
+                                <!-- <i class="bi bi-tiktok"></i> -->
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="support">
+                <div class="icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-tiktok"></i>
+                </div>
+
+               <a href="http://caniuse.com/#search=object-fit">Browser Support</a><br>
+               <a href="https://github.com/jonathantneal/fitie">Need to support IE &amp; Edge?</a>
+            </div> -->
+        </section>
+    </section>
+
+    <section class="services">
+        <app-servicetopsection></app-servicetopsection>
+    </section>
+
+    <section id="bostingText">
+        <div class="container-fluid py-5">
+            <h2 class="py-2">
+                <span data-fusion-font="true">
+                    We’re not just another <span class="brandColor">digital media agency</span> or bunch of marketing gurus.
+                </span>
+                <br>
+                <span data-fusion-font="true">We </span>
+                <span class="fusion-highlight">break boundaries</span>
+                <span data-fusion-font="true"> to craft extraordinary </span>
+                <span class="fusion-highlight">experiences.</span>
+            </h2>
+        </div>
+    </section>
+
+    <section id="marketivity">
+        <div class="container-fluid py-5">
+            <div class="card mb-3">
+                <div class="row g-0 py-2">
+                    <div class="col-md-5">
+                        <!-- <video class="img-fluid" src="./../../../assets/videos/marketivity.mp4" autoplay loop playsinline muted></video> -->
+                        <video class="img-fluid" [src]="videoLinks.marketivity" autoplay loop playsinline muted></video>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <div>
+                                <h3 class="card-title">Marketivity</h3>
+
+                                <h5 class="mar-ke-tiv-i-tee my-4">
+                                    <i>[mar-ke-tiv-i-tee]</i>
+                                </h5>
+
+                                <p class="card-text">
+                                    <strong class="brandColor">Marketing <span style="color: #ffffff;"> | </span> Creativity</strong>
+                                    <br>
+                                    <br>
+                                    We market your brand creatively. Across all platforms – both digital and physical – we creatively
+                                    <br>
+                                    Innovate the way your brand is portrayed, positioned, and ultimately, how it performs.
+                                    <br>
+                                    &nbsp;
+                                </p>
+
+                                <button type="button" routerLink="/services" class="btn btn-danger viewOurWork">View Our Work</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottomBgVideo">
+        <app-ftbgvideosection></app-ftbgvideosection>
+    </section>
+
+    <!-- <section id="happyClients">
+        <div class="container-fluid py-5">
+            <div class="row g-2">
+                <div class="col-12">
+                    <h2 class="fusion-responsive-typography-calculated" style="text-align: center; --fontsize: 32; line-height: 1.3;" data-fontsize="32" data-lineheight="41.6px">
+                        <strong>
+                            Here are Some of Our 
+                            <span class="fusion-highlight">Happy Clients</span>
+                        </strong>
+                    </h2>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <img src="..." class="img-thumbnail clientLogo"  alt="...">
+                </div>
+
+                <div class="col-12 py-3 text-center mx-auto">
+                    <button type="button" routerLink="/quote" class="btn btn-danger addYourLogo">Add Your Logo</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="clientsTestimony">
+
+            <div id="carouselExampleControls" class="carousel slide py-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="container">
+                        <div class="carousel-item active">
+                            <div class="testimony-container">
+                                <p class="testimony-text">
+                                    Thanks Lloyd you guys are awesome. 
+                                    We are very proud to be associated with a professional company like you!!!
+                                </p>
+
+                                
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="./../../../assets/images/branding.png" style="max-width: 75px;" alt="...">
+                                    </div>
+
+                                    <div class="flex-grow-1 ms-3">
+                                        <strong>Director</strong>
+                                        <br>
+                                        <p>Bambisana Office Movers and Installers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <div class="testimony-container">
+                                <p class="testimony-text">
+                                    We had our BUSIEST month in the history of our business, during lockdown!… 
+                                    Thanks to the leads generated through the website & social pages which Pearce Media created for us.
+                                </p>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="./../../../assets/images/copywriting.png" style="max-width: 75px;" alt="...">
+                                    </div>
+
+                                    <div class="flex-grow-1 ms-3">
+                                        <strong>Director</strong>
+                                        <br>
+                                        <p>Batteries4All</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <div class="testimony-container">
+                                <p class="testimony-text">
+                                    I just want to thank you guys again… 
+                                    This is simply brilliant work guys. 
+                                    Professional, message is clear, concise and to the point. 
+                                    All the feedback no matter how much I interrogate it is extremely positive. 
+                                    I am in awe of your greatness.
+        
+                                    Well done team.
+                                </p>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="./../../../assets/images/graphicDesign.png" style="max-width: 75px;" alt="...">
+                                    </div>
+
+                                    <div class="flex-grow-1 ms-3">
+                                        <strong>Director</strong>
+                                        <br>
+                                        <p>Prosumer Connect</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <i class="bi bi-chevron-left" style="color: #000000; font-size: xx-large;" aria-hidden="true"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+    
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <i class="bi bi-chevron-right" style="color: #000000; font-size: xx-large;" aria-hidden="true"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    
+        </section>
+    </section> -->
+
+    <section class="footer py-3 bg-dark mt-auto">
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-sm-7 col-md-8">
+                    <div class="fusion-wrapper">
+                        <div class="fusion-text">
+                            <h2 class="fusion-typography" data-fontsize="40" data-lineheight="48px">
+                                <span style="color: #ffffff;">
+                                    Fighting 
+                                    <span class="fusion-highlight">#FOMO</span> 
+                                    Together
+                                    <br>
+                                </span>
+                            </h2>
+
+                            <div>
+                                <p>
+                                    <span style="color: #ffffff;">Sign up for our newsletter.
+                                        <br>
+                                        No spamming! We promise.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="fusion-privacy">
+                            <p>
+                                <span style="color: #999999;">
+                                    By submitting your details you agree to our 
+                                    <a routerLink="">Privacy Policy</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4">
+                    <form #newsletter="ngForm" (ngSubmit)="onSubmitNewsletter(newsletter)">
+                        <!-- email -->
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label class="small mb-1" for="inputemail">Email Address</label>
+                                <input class="form-control" id="inputemail" 
+                                    type="email"
+                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$"
+                                    placeholder="Enter your email address *"
+                                    autocomplete="email"
+                                    name="email"
+                                    #email="ngModel"
+                                    ngModel
+                                    aria-label="email" aria-describedby="inputemail-Help inputemail"
+                                >
+
+                            </div>
+                        </div>
+
+                        <div class="form-group float-right mt-4 mb-0">
+                            <button class="btn btn-danger" type="submit" [disabled]="newsletter.invalid || submitted">
+                                Email me <i *ngIf="submitted" class="BTNloader"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
+</main>

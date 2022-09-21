@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">
+            <img src="./../../../assets/logo/tesaWhite.png" alt="logo" width="55" height="55" class="d-inline-block align-text-middle">
+            {{ 'Tesamedia.com' | titlecase }}
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" [routerLinkActive]="['active']">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about" [routerLinkActive]="['active']">About Us</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" routerLink="/services" [routerLinkActive]="['active']" role="button" aria-expanded="false">
+                        Our Services
+                    </a>
+                    <ul class="dropdown-menu py-0 bg-dark">
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/social-media-marketing">Social Media</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/digital-marketing">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/graphic-design">Graphic Design</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/websites">Websites</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/copywriting">Copywriting</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/branding">Branding</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/photography">Photography</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/videography">Videography</a></li>
+                        <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="/services/app-development">App Development</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']">Blog</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact" [routerLinkActive]="['active']">Contact Us</a>
+                </li>
+
+                <div class="d-flex float-end">
+                    <button class="btn quoteBTN me-2" type="submit" routerLink="/quote" [routerLinkActive]="['quoteActive']">Get a Quote</button>
+                </div>
+                
+            </ul>
+
+        </div>
+  
+    </div>
+</nav>

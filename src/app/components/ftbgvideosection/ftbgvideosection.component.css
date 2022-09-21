@@ -1,0 +1,158 @@
+main#backgroundVideo {
+
+}
+
+
+
+
+.fullwidth-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/*** T H E - M A G I C - O F - O B J E C T - F I T ***/
+/*****************************************************/
+
+.video-container {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  @media(min-width: 600px) {
+    height: 100vh;
+  }
+}
+  
+video {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+  
+  
+/*** A E S T H E T I C S ***/
+/***************************/
+  
+* {
+  box-sizing: border-box;
+}
+  
+  
+.video-container:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(black, .2);
+  z-index: 1;
+}
+  
+h1 {
+    /* text-transform: capitalize; */
+    font-weight: 900;
+    margin: 0 0 1rem;
+    padding: 0;
+    line-height: 1;
+    font-family: Futura, Helvetica, sans-serif;
+    font-size: 5vw;
+    @media (max-width: 400px) {
+      font-size: 22px;
+    };
+    @media (min-width: 1200px) {
+      font-size: 75px;
+    }
+}
+  
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+  
+.outlineBTN:hover {
+  background-color: transparent;
+  color: white;
+  border-color: #ffffff;
+
+}
+
+.support {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+}
+
+.support a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.support a:before {
+  display: block;
+  position: absolute;
+  content: '';
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: rgba(white, .3);
+  transition: .3s;
+}
+
+.support a:hover:before {
+  width: 100%;
+}
+
+#backgroundVideo button.contactUs {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+#backgroundVideo button.contactUs:hover {
+  background-color: #de2341;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  /* border-radius: 5px; */
+}
+
+#backgroundVideo * {
+  color: #ffffff !important;
+}
+
+#backgroundVideo .textContainer h2 {
+  line-height: 2.7rem;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#backgroundVideo .textContainer .title {
+  font-weight: bolder;
+  font-size: 37px;
+}

@@ -1,0 +1,26 @@
+<main class="my-5">
+    <section class="container-fluid py-3">
+        <div class="row align-items-center g-3 mx-auto">
+            <div class="col-sm-6 mx-auto">
+                <div class="imageContainer container">
+                    <img [src]="imageUrl" alt="icon">
+                </div>
+            </div>
+
+            <div class="col-sm-6 mx-auto">
+                <div class="mainWrapper container">
+                    <div class="textwrapper">
+                        <h1 class="title" *ngIf="titleText"> {{ titleText }} </h1>
+
+                        <p *ngIf="paragraphText1"> {{ paragraphText1 }} </p>
+                        <p *ngIf="paragraphText2"> {{ paragraphText2 }} </p>
+                    </div>
+
+                    <div class="btnWrapper">
+                        <button type="button" routerLink="/quote" class="btn startProjectBTN"> Start a project </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
