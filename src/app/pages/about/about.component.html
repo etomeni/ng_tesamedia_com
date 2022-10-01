@@ -419,11 +419,19 @@
                         </div>
                     </div>
 
+                    <div class="row" *ngIf="formStatus.error || formStatus.success">
+                        <div class="col-12">
+                            <div class="alert" [ngClass]="{'alert-success': formStatus.success, 'alert-danger' : formStatus.error}" role="alert">
+                                {{ formStatus.message }}
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="form-group d-grid gap-2 mt-4 mb-0">
                         <button class="btn btnSend text-uppercase" type="submit"
-                             [disabled]="contactUs.invalid || submitted"
+                             [disabled]="contactUs.invalid || formStatus.submitted"
                         >
-                            Send <i *ngIf="submitted" class="BTNloader"></i>
+                            Send <i *ngIf="formStatus.submitted" class="BTNloader"></i>
                         </button>
                     </div>
                 </div>

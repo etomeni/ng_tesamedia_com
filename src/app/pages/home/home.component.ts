@@ -27,7 +27,6 @@ export class HomeComponent implements OnInit {
     const formData = formDatas.value;
 
     console.log(formData);
-    
 
   }
 
