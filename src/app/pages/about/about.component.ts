@@ -156,6 +156,10 @@ export class AboutComponent implements OnInit {
 
     return obj;
   }
-  
 
+  onToMeetOurTeam() {
+    let el = document.getElementById('meetOurTeam');
+    el?.scrollIntoView();
+  }  
+  
 }

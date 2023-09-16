@@ -1,3 +1,7 @@
+a {
+    color: unset;
+}
+
 #contactUs .interested .form-check-input:checked {
     background-color: #de2341;
     border-color: #de2341;

@@ -1,0 +1,17 @@
+main article {
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+main article h2 {
+    font-weight: bolder;
+
+}
+
+main article section {
+    margin-bottom: 30px;
+}
+
+main article section h5 {
+    font-weight: bold;
+}

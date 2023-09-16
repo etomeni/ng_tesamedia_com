@@ -28,6 +28,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TopServiceContentComponent } from './components/top-service-content/top-service-content.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 // import { NgToastModule } from 'ng-angular-popup';
 
@@ -57,7 +58,8 @@ import { HttpClientModule } from '@angular/common/http';
     FtbgvideosectionComponent,
     ServicetopsectionComponent,
     TopServiceContentComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    PrivacyPolicyComponent
 
   ],
   imports: [

@@ -5,6 +5,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { QuoteComponent } from './pages/quote/quote.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { AppDevelopmentComponent } from './pages/zervices/app-development/app-development.component';
@@ -43,6 +44,11 @@ const routes: Routes = [
   { 
     path: 'quote',   
     component: QuoteComponent
+  },
+
+  { 
+    path: 'privacy-policy',   
+    component: PrivacyPolicyComponent
   },
 
   { 
